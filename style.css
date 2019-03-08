@@ -1,0 +1,212 @@
+:root {
+  --blue: #26547C;
+  --red: #EF476F;
+  --yellow: #FFD166;
+  --green: #06D6A0;
+  --white: #FFFCF9;
+}
+
+body {
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--blue);
+  background-color: var(--white);
+
+  padding: 2%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+h2 {
+  font-size: 33px;
+  line-height: 1.1;
+  margin: 0;
+  margin: 0 0 30px 0;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+blockquote {
+  font-family: 'Shadows Into Light', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Colour blocks */
+header {
+  background-color: var(--green);
+  color: var(--white);
+  margin-bottom: 5%;
+}
+
+main {
+  background-color: var(--yellow);
+  margin-bottom: 5%;
+}
+
+.gallery {
+  background-color: var(--red);
+  color: var(--white);
+  margin-bottom: 5%;
+}
+
+.reviews {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* Download banner */
+
+.download-banner {
+  background: var(--yellow) url(images/hour-glass-red.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  min-height: 300px;
+  max-height: 60vh;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-banner a {
+  color: var(--white);
+  background-color: var(--green);
+  text-decoration: none;
+  padding: 20px 40px;
+  border: 4px solid;
+  border-radius: 10px;
+}
+
+.download-banner a:hover,
+.download-banner a:focus {
+  color: var(--green);
+  background-color: var(--white);
+}
+
+/* Image gallery */
+
+.gallery ul {
+  list-style-type: none;
+  padding: calc(5% - 20px);
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery li {
+  flex: 1 0 150px;
+  height: 300px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-watch {
+  background-image: url(images/white-wall.jpg);
+  background-position: 100% 50%;
+}
+
+.black-watch {
+  background-image: url(images/black-wall.jpg);
+  background-position: 0% 50%;
+}
+
+.red-watch {
+  background-image: url(images/red-clock.jpg);
+  background-position: 50% 50%;
+}
+
+.business-watch {
+  background-image: url(images/business-watch.jpg);
+  background-position: 0% 50%;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.logo {
+  min-width: 50px;
+  max-width: 150px;
+}
+
+.menu {
+  flex: 1 0 auto;
+  max-width: 10em;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: var(--white);
+  background-color: var(--green);
+  text-decoration: none;
+
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.menu a:hover,
+.menu a:focus,
+.menu .current {
+  color: var(--green);
+  background-color: var(--white);
+}
+
+/* Main section */
+
+main {
+  padding: 5%;
+}
+
+/* Reviews */
+
+.reviews {
+  padding: 5%;
+}
+
+.reviews ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
